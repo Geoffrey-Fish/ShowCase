@@ -1,0 +1,54 @@
+﻿<Window x:Class="ParkHouseV2.Views.CarCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkHouseV2.Views"
+        mc:Ignorable="d"
+        Title="CarCreation" Height="270" Width="700">
+	<!-- Main Grid-->
+	<Grid Name="MainCarGrid" Background="LightGray" Margin="10" >
+	    <Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+	    </Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="3*"/>
+		</Grid.RowDefinitions>
+<Border Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Background="AliceBlue" Height="auto">
+		<Label FontWeight="Black" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Vehicle Generator"/>
+       </Border>
+
+		<!-- Labels-->
+		<Label Grid.Row="1" FontWeight="Black" FontSize="14" HorizontalAlignment="center" Content="Choose Type of Vehicle"/>
+		<Label Grid.Row="1" Grid.Column="1" FontWeight="Black" FontSize="14" HorizontalAlignment="center" Content="Choose Model"/>
+		<Label Grid.Row="1" Grid.Column="2" FontWeight="Black" FontSize="14" HorizontalAlignment="center" Content="Type Licence Plate"/>
+		<Label Grid.Row="1" Grid.Column="3" FontWeight="Black" FontSize="14" HorizontalAlignment="center" Content="Choose Type of Vehicle"/>
+
+		<!-- VehicleType radiobuttons-->
+		<!--todo: to be implemented-->
+		<StackPanel Grid.Row="2" Grid.Column="0" Name="vehicletypes_spnl">
+			<RadioButton Name="car_rdo" Content="Car" FontWeight="Black" FontSize="16" HorizontalAlignment="Center" IsChecked="{Binding CarRdoChecked}"/>
+			<RadioButton Name="Bike_rdo" FontWeight="Black" FontSize="16" HorizontalAlignment="Center" Content="Motorcycle" IsChecked="{Binding BikeRdoChecked}"/>
+			<RadioButton Name="truck_rdo" FontWeight="Black" FontSize="16" HorizontalAlignment="Center" Content="Truck" IsChecked="{Binding TruckRdoChecked}"/>
+		</StackPanel>
+		
+		<!-- Model Comboboxes-->
+		<!--todo: does not work right-->
+		<StackPanel Grid.Row="2" Grid.Column="1" Name="modeltypes_spnl">
+			<ComboBox Name="carModels_cobo" Width="100" ItemsSource="{Binding CarModels}" SelectedItem="{Binding CarModelSelected}"/>
+			<ComboBox Name="bikeModels_cobo" Width="100" ItemsSource="{Binding BikeModels}" SelectedItem="{Binding BikeModelSelected}"/>
+			<ComboBox Name="truckModels_cobo" Width="100" ItemsSource="{Binding TruckModels}" SelectedItem="{Binding TruckModelSelected}"/>
+		</StackPanel>
+		
+		<!--Licence input-->
+		<TextBox Grid.Row="2" Grid.Column="2" Width="130" Height="20" Name="licenceInput_tbx" VerticalAlignment="top" Text="{Binding LicencePlateTyped}"/>
+		<Button Name="createVehicle_btn" Grid.Row="2" Grid.Column="3" Width="100" Height="20" Content="Create" VerticalAlignment="Top" Click="createVehicle_btn_Click" Command="ApplicationCommands.Close"/>
+		<Button x:Name="testbutton" Grid.Column="3" Content="Button" HorizontalAlignment="Left" Margin="35,70,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Testbutton_OnClick"/>
+
+	</Grid>
+</Window>

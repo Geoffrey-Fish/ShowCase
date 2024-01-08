@@ -1,0 +1,144 @@
+<mxfile host="Electron" modified="2023-09-02T13:09:09.845Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="fzUJ4fhDddHepyE98ztr" version="21.6.5" type="device">
+  <diagram name="Page-1" id="Lhjxjn11m8dIXPZWsh54">
+    <mxGraphModel dx="1434" dy="2005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-11" value="Schülerbogen" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-310" width="140" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-12" value="Titel Name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-13" value="Zeile Fach" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-14" value="Spalte Fachname=&amp;gt;&lt;br&gt;Zeilen Mündlich/schrift" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-83" value="Spalte Auflistung d. Notenarten in Zeilen" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="120" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-82" value="Spalte Schnitt jeder Zeile" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="160" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-81" value="Nach&lt;br&gt;fo&lt;br&gt;lgend spalten Noteneintragungen je zeile" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-11">
+          <mxGeometry y="190" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-15" value="Klassenbogen Übersicht" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=none;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="680" y="-310" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-16" value="Reiterauswahl für jede prüfung" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-15">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-17" value="Thema und Datum und Schnitt" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-15">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-18" value="Spalten Name, Note, Punkte, Notizverweis" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-15">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-19" value="Notenschlüssel" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-310" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-20" value="Note 1 bis 6" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-19">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-21" value="Prozent.Anteil Einstellbar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-19">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-22" value="Ausgabe Punkte zu Note anhand Prozente" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-19">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-47" value="Ausgabe:&lt;br&gt;Noten als Säulen&lt;br&gt;Darunter %" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1156" y="-280" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-50" value="Dropdown &amp;amp; Freifeld" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1171" y="-630" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-52" value="Kalender view" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1171" y="-560" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-54" value="Eintrag Schülerbogen" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1166" y="-370" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-57" value="Eintrag Klassenbogen &amp;amp; Schülerbogen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-470" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-75" value="kommentarfeld" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-86" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-700" width="180" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-79" value="Ordner Prüfungen" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-86">
+          <mxGeometry x="50" y="36" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-66" value="Ordner Klassen" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-86">
+          <mxGeometry x="50" y="135" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-67" value="Ordner Schüler" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-86">
+          <mxGeometry x="50" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-87" value="Ordnung" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="515" y="-732" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-74" value="" style="swimlane;startSize=0;container=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="-702" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-77" value="Notenerfassung" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790" y="-740" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-27" value="Klassenbogen Prüfung" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="-690" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-28" value="Titel fach und Art" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-27">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-29" value="Spalte Schüler" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-27">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-30" value="Spalte Note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-27">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-73" value="Spalte Pünkte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-27">
+          <mxGeometry y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-71" value="Spalte Codekürzel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-27">
+          <mxGeometry y="150" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-7" value="Deckblatt prüfung" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="-690" width="140" height="300" as="geometry">
+            <mxRectangle x="470" y="50" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-8" value="Titel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-9" value="Thema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-10" value="Datum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-64" value="Durchschnitt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-39" value="Bearbeitete Themen" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="150" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-42" value="Notenschlüssel Infotafel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="180" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-40" value="SchülerZahl Teilnahme" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="210" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-41" value="Schülerzahl fehlend" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9q1W04NDtrOZ9_5XP6an-43" value="Balkendiagramm" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="9q1W04NDtrOZ9_5XP6an-7">
+          <mxGeometry y="270" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

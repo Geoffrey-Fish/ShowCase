@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "z31k+iV+Gcereja4VuQNsJSfb3q7w0tDTUqNJW0KYRH7LRqOvTEZZrKoBlLsrk7yWq56G6uBS05R/ANhPOkXwg==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\#iDidIt\\CatLitterMoneyBox\\CatLitterMoneyBox.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.visualstudio.vsixcolorcompiler\\17.0.31709.430\\microsoft.visualstudio.vsixcolorcompiler.17.0.31709.430.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512"
+  ],
+  "logs": []
+}

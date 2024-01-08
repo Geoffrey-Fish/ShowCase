@@ -1,0 +1,33 @@
+
+-gui user interface
+--add/remove tools
+-->maybe buttons that represent the places in the toolbox
+-->maybe combobox
+--> sorting button for sorting 
+	-weight
+	-serialnumber
+-->validate info, if chosen tools has itemcount restrictions
+
+###
+-->csv protocoll robot,tool, time changed on it
+###
+-build testcases
+###
+-only one robot per tool 
+###
+-----------------------------------
+-datenmodell roboter  ok
+-Parentclass tools ok
+-tools children ok
+-toString override tools ok
+-tool infos:
+	 -serialnumber ok
+	 -material 
+	 -stock ok
+	 -weight ok
+-method add tool ok
+-method remove tool ok
+	-both with places inside the
+-toolbox ok
+-->if empty, error ok
+

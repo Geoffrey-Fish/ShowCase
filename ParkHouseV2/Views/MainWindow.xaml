@@ -1,0 +1,260 @@
+﻿<Window x:Name="window" x:Class="ParkHouseV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkHouseV2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="700">
+	<!-- Button Design-->
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="LightBlue" />
+            <Setter Property="Foreground" Value="DarkGreen" />
+            <Setter Property="BorderBrush" Value="DarkBlue" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TextboxesStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="DarkGray"/>
+        </Style>
+        <Style x:Key="TextBlockStyles" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+    </Window.Resources>
+    <!--Main Grid Layout-->
+    <Grid Name="MainGrid" Margin="10" Background="LightGray" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <!--Top left Corner Design-->
+        <Grid Name="TopLeftGrid" Grid.Row="0" Grid.Column="0"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="7*" />
+            </Grid.RowDefinitions>
+            <Border Grid.ColumnSpan="2" Background="BlanchedAlmond" BorderBrush="Black" BorderThickness="2" CornerRadius="10">
+                <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                       Text="Parkhouse Simulator V0.5" FontSize="16"
+                       FontWeight="Black"
+                       TextAlignment="Center"></TextBlock>
+            </Border>
+            <TextBlock Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2"
+                       TextAlignment="Center" TextWrapping="Wrap" Margin="5,0" Style="{StaticResource TextBlockStyles}" >
+                Definition of this app and whatnot &#x0a;
+                You can create a Parkhouse, &#x0a;
+                park random generated Cars, Motorcycles &#x0a;
+                and Trucks in it.  &#x0a;
+                You can drive out again, &#x0a;
+                search for Vehicles by &#x0a;
+                -Type, &#x0a;
+                -Licence Plate &#x0a;
+                -Lot number. &#x0a;
+            </TextBlock>
+        </Grid>
+
+
+        <!--Top right Corner Design-->
+        <Grid Name="TopRightGrid" Grid.Row="0" Grid.Column="1"
+               >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.ColumnSpan="2" Background="BlanchedAlmond" BorderBrush="Black" BorderThickness="2" CornerRadius="10">
+                <TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
+                       Text="Define your Parkhouse" FontSize=" 16"
+                       FontWeight="Black" TextAlignment="Center" Margin="5,0,5,-6" />
+            </Border>
+            <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"
+                       Margin="5,0,0,0" Style="{StaticResource TextBlockStyles}" Text="Parking lots"/>
+            <TextBox Name="lotAmount_tbx" Grid.Row="1" Grid.Column="1"
+                     Width="100" Height="20" HorizontalAlignment="Left" Style="{StaticResource TextboxesStyle}" Text="{Binding LotNumber}" />
+            <TextBlock Grid.Row="2" VerticalAlignment="Center" Margin="5,0,0,0" Text="Prize per hour" Style="{StaticResource TextBlockStyles}" />
+            <TextBox Name="price_tbx" Grid.Row="2" Grid.Column="1" Width="100"
+                     Height="20" HorizontalAlignment="Left" Style="{StaticResource TextboxesStyle}"/>
+            <Button Name="createPhouse_btn" Grid.Row="3" Grid.ColumnSpan="2"
+                    Width="201" Height="40" FontSize="16" FontWeight="Black" 
+                    Click="CreatePhouse_btn_OnClick" Content="Create Parkhouse" Style="{StaticResource RoundedButtonStyle}"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"
+                       Margin="5,0,0,0" 
+                Text="Load recent Parkhouse" Style="{StaticResource TextBlockStyles}"/>
+            <Button Name="loadLastPh_btn" Grid.Row="4" Grid.Column="1"
+                    Width="78" Height="30" FontSize="14" FontWeight="Black"
+                    Click="LoadLastPh_btn_OnClick" Style="{StaticResource RoundedButtonStyle}" Margin="23,5,44,7" Content="Load" />
+        </Grid>
+
+
+        <!--Middle left Corner Design-->
+        <Grid Name="BottomLeftGrid" Grid.Row="1" Grid.Column="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <!--Buttons Create Car Motorcycle Truck -->
+            <Border Grid.ColumnSpan="3" Background="BlanchedAlmond" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="5,0">
+                <TextBlock Grid.ColumnSpan="3" TextAlignment="Center" FontSize="16" FontWeight="Black" Text="Vehicle Control" Style="{StaticResource TextBlockStyles}"/>
+            </Border>
+
+            <!-- Left buttons-->
+            <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Center"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontSize="13" FontWeight="Black" TextWrapping="Wrap" Margin="5" Padding="3" Text="Create Vehicle" Style="{StaticResource TextBlockStyles}"/>
+            <Button Name="car_btn" Grid.Row="2" Style="{StaticResource RoundedButtonStyle}"   Click="Car_btn_OnClick" Width="80" Height="25" Content="Car"/>
+            <Button Name="MoCy_btn" Grid.Row="3" Style="{StaticResource RoundedButtonStyle}"  Click="MoCy_btn_OnClick" Width="80" Height="25" Content="MotorCycle"/>
+            <Button Name="truck_btn" Grid.Row="4" Style="{StaticResource RoundedButtonStyle}"  Click="Truck_btn_OnClick" Width="80" Height="25" Content="Truck"/>
+            <Button Name="CustomCreation_btn" Grid.Row="5" Style="{StaticResource RoundedButtonStyle}" Click="CustomCreation_btn_OnClick" Height=" 25" Content="Create Custom Vehicle"/>
+            
+            <!--Right Infos -->
+            <TextBlock Grid.Row="1" Grid.Column="1" Height="20" Width="40"  Margin="5,0,0,0" Text="Name" Style="{StaticResource TextBlockStyles}"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Height="20" Width="40" Margin="5,0,0,0" Text="Type" Style="{StaticResource TextBlockStyles}"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Height="20" Width="40" Margin="5,0,0,0" Text="Licence" Style="{StaticResource TextBlockStyles}"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Height="20" Width="40" Margin="5,0,0,0" Text="Model" Style="{StaticResource TextBlockStyles}"/>
+            <TextBox Name="name_tbx" Grid.Row="1" Grid.Column="1" Height="20"
+                     Margin="63,8,5,9" Grid.ColumnSpan="2" Style="{StaticResource TextboxesStyle}" Text="{Binding NameTxtBox}"  />
+            <TextBox Grid.Row="2" Name="type_tbx" Grid.Column="1" Height="20"
+                     Margin="61,9,5,9" Grid.ColumnSpan="2" Style="{StaticResource TextboxesStyle}" Text="{Binding TypeTxtBox}"/>
+            <TextBox Grid.Row="3" Name="licence_tbx" Grid.Column="1"
+                     Height="20" Margin="63,9,5,8" Grid.ColumnSpan="2" Style="{StaticResource TextboxesStyle}" Text="{Binding LicenceTxtBox}"/>
+            <TextBox Grid.Row="4" Name="model_tbx" Grid.Column="1" Height="20"
+                     Margin="63,9,5,9" Grid.ColumnSpan="2" Style="{StaticResource TextboxesStyle}" Text="{Binding ModelTxtBox}" />
+            <TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource TextboxesStyle}" Width="100" Height="20"  Name="SuccessCustom_tbx"/>
+        </Grid>
+
+
+        <!-- Middle right Corner Design-->
+        <Grid Name="BottomRightGrid" Grid.Row="1" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.ColumnSpan="3" Background="BlanchedAlmond" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="5,0">
+                <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextAlignment="Center"
+                       FontSize="16" FontWeight="Black" Text="Actions"/>
+            </Border>
+            <!-- Combo Boxes-->
+            <ComboBox Name="searchLicence_cobx" Grid.Row="1" Grid.Column="0"
+                      Height="20" ItemsSource="{Binding LicencePlates}" Margin="10,10,-10,7" SelectedItem="{Binding SearchLicenceCobo}" />
+            <ComboBox Name="searchType_cobx" Grid.Row="2" Grid.Column="0"
+                      Height="20" ItemsSource="{Binding Models}" RenderTransformOrigin="0.474,0.601" Margin="10,8,-10,10" SelectedItem="{Binding SearchModelCobo}" />
+            <ComboBox Name="searchLot_cobx" Grid.Row="3" Grid.Column="0"
+                      Height="20" ItemsSource="{Binding UsedLotNumbers}" Margin="10,9,-10,8"
+                      SelectedItem="{Binding SearchLotNumberCobo}"/>
+
+            <Button Name="searchLicence_btn" Grid.Row="1" Grid.Column="1" Height="30" Width="140" Style="{StaticResource RoundedButtonStyle}" Click="SearchLicence_btn_OnClick" Content="Search by LicencePlate"/>
+            <Button Name="searchType_btn" Grid.Row="2" Grid.Column="1"
+                    Height="30" Width="140" Style="{StaticResource RoundedButtonStyle}" Click="SearchType_btn_OnClick" Content="Search by Model"/>
+            <Button Name="searchLot_btn" Grid.Row="3" Grid.Column="1"
+                    Height="30" Width="140" Style="{StaticResource RoundedButtonStyle}" Click="SearchLot_btn_OnClick" Content="Search by LotNumber"/>
+            <Button Name="parkIn_btn" Grid.Row="4" Grid.Column="0" Height="30"
+                    Width="100" Style="{StaticResource RoundedButtonStyle}"  Click="ParkIn_btn_OnClick" Margin="16,4,0,4" Content="Park in"/>
+            <Button Name="driveOut_btn" Grid.Row="4" Grid.Column="1"
+                    Height="30" Width="140" Style="{StaticResource RoundedButtonStyle}"  Click="DriveOut_btn_OnClick" Content="Drive out"/>
+        </Grid>
+
+
+        <!-- Footer Grid Output Field-->
+        <Grid Name="FooterGrid" Grid.Row="2" Grid.ColumnSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.ColumnSpan="4" Background="BlanchedAlmond" BorderBrush="Black"
+                    BorderThickness="2"
+                    CornerRadius="10" Margin="5,0" >
+                <Label FontSize="20" FontWeight="Black" Content="Output Fields" HorizontalAlignment="center" />
+            </Border>
+
+            <TextBox Name="resultText_tbx" Grid.Row="1" Grid.ColumnSpan="2"
+                     Focusable="False" Height="30" Style="{StaticResource TextboxesStyle}" Text="{Binding ResultTextBox}" />
+
+            <!-- Results from operations-->
+            <TextBox Name="errorText_tbx" Grid.Row="2" Grid.ColumnSpan="2"
+                     Focusable="False" Style="{StaticResource TextboxesStyle}" Text="{Binding ErrorTextBox}"/>
+
+            <!-- Error informations-->
+            <Button Name="testing_btn" Grid.Row="1" Grid.Column="2"
+                    Grid.ColumnSpan="2" Width="120" Height="30" Style="{StaticResource RoundedButtonStyle}" Content="Testbutton" Click="Testing_btn_OnClick" Margin="10,0,15,6">
+            </Button>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" FontSize="12"
+                       FontWeight="Black" VerticalAlignment="Center" Text="Free Lots:"/>
+            <TextBox Name="freeTicker_tbx" Grid.Row="3" Grid.Column="0"
+                     Focusable="False" Width="50" Height="20" Style="{StaticResource TextboxesStyle}" Text="{Binding FreeTickerTxtBox}"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" FontSize="12"
+                       FontWeight="Black" VerticalAlignment="Center" Text="Used Lots:"/>
+            <TextBox Name="usedTicker_tbx" Grid.Row="3" Grid.Column="1"
+                     Focusable="False" Width="50" Height="20"  Style="{StaticResource TextboxesStyle}" Text="{Binding UsedTickerTxtBox}"/>
+
+            <Button Name="clearVehicleDataWindows_btn"
+                    Grid.Column="2" Width="100" Height="20" Style="{StaticResource RoundedButtonStyle}" 
+                    Click="ClearVehicleDataWindows_btn_OnClick" Focusable="{Binding ClearVehicleDataWindowBtn }" Margin="12,3,13,3" Grid.ColumnSpan="2" Grid.Row="2" Content="Clear all"/>
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2" Name="okLight_btn" Width="40" Height="20"
+                    Focusable="False" HorizontalAlignment="center" Content="OK" Background="{Binding OkLightColor}"/>
+            <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" x:Name="errorLight_btn" Width="40" Height="20"
+                        Focusable="False" Content="Error" HorizontalAlignment="Left" Margin="52,9,0,8" Background="{Binding ErrorLightColor}"/>
+        </Grid>
+
+    </Grid>
+</Window>

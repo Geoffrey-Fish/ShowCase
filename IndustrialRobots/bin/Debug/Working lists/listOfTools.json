@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "drill",
+    "ClassType": "Drill",
+    "Category": "Destruction",
+    "Material": "Steel",
+    "Weight": 700.0,
+    "Availability": true,
+    "SerialNumber": 15791
+  },
+  {
+    "Name": "Welder",
+    "ClassType": "ArcWelder",
+    "Category": "Welding",
+    "Material": "Aluminum",
+    "Weight": 1300.0,
+    "Availability": true,
+    "SerialNumber": 17625
+  },
+  {
+    "Name": "comune",
+    "ClassType": "Computer",
+    "Category": "Manipulation",
+    "Material": "Wood",
+    "Weight": 200.0,
+    "Availability": true,
+    "SerialNumber": 10984
+  },
+  {
+    "Name": "ducsy",
+    "ClassType": "DuctTape",
+    "Category": "Fixation",
+    "Material": "Diamond",
+    "Weight": 450.0,
+    "Availability": true,
+    "SerialNumber": 5979
+  },
+  {
+    "Name": "lightsaber",
+    "ClassType": "Laser",
+    "Category": "Destruction",
+    "Material": "Diamond",
+    "Weight": 390.0,
+    "Availability": true,
+    "SerialNumber": 1509
+  }
+]

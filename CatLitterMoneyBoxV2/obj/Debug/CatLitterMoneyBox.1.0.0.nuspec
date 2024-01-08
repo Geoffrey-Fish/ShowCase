@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CatLitterMoneyBox</id>
+    <version>1.0.0</version>
+    <authors>CatLitterMoneyBox</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Microsoft.VisualStudio.VsixColorCompiler" version="17.0.31709.430" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="SQLite" version="3.13.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SQLite.Core" version="1.0.118" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\GitHub\#iDidIt\CatLitterMoneyBox\bin\Debug\net6.0-windows\CatLitterMoneyBox.runtimeconfig.json" target="lib\net6.0-windows7.0\CatLitterMoneyBox.runtimeconfig.json" />
+    <file src="D:\GitHub\#iDidIt\CatLitterMoneyBox\bin\Debug\net6.0-windows\CatLitterMoneyBox.dll" target="lib\net6.0-windows7.0\CatLitterMoneyBox.dll" />
+  </files>
+</package>

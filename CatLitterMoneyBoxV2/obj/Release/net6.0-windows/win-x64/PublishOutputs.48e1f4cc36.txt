@@ -1,0 +1,8 @@
+C:\Users\Scy\Downloads\KatzenKlo\CatLitterMoneyBox.exe
+C:\Users\Scy\Downloads\KatzenKlo\CatLitterMoneyBox.deps.json
+C:\Users\Scy\Downloads\KatzenKlo\CatLitterMoneyBox.runtimeconfig.json
+C:\Users\Scy\Downloads\KatzenKlo\CatLitterMoneyBox.pdb
+C:\Users\Scy\Downloads\KatzenKlo\SQLite.Interop.dll
+C:\Users\Scy\Downloads\KatzenKlo\Newtonsoft.Json.dll
+C:\Users\Scy\Downloads\KatzenKlo\System.Data.SQLite.dll
+C:\Users\Scy\Downloads\KatzenKlo\CatLitterMoneyBox.dll
