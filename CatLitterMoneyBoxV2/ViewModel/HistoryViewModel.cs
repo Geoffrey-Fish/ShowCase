@@ -1,168 +1,175 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data.SQLite;
+using System.IO;
 using System.Linq;
+using System.Text;
+using System.Windows;
 
 using CatLitterMoneyBox.Model;
 
 namespace CatLitterMoneyBox.ViewModel;
 
-
-public class HistoryViewModel:INotifyPropertyChanged
-    {
-
-    #region Properties
+public class HistoryViewModel : INotifyPropertyChanged {
+#region Properties
     public event PropertyChangedEventHandler PropertyChanged;
+
+    public enum Names {
+        Felicitas
+        , Paulinus
+        , Jeff
+        , Miri
+    }
 
     //Main Datalist for manipulating and querries
     private ObservableCollection<DataItem> _allDataItems { get; set; }
-    public ObservableCollection<DataItem> AllDataItems
-        {
-        get { return _allDataItems; }
-        set
-            {
+    private ObservableCollection<DataItem> _currentData  { get; set; }
+    private List<DataItem>                 _allUsers     { get; set; }
+    private Names                          _selectedUser { get; set; }
+
+    public ObservableCollection<DataItem> AllDataItems {
+        get => _allDataItems;
+        set {
             _allDataItems = value;
             OnPropertyChanged(nameof(AllDataItems));
-            }
         }
+    }
     //Filtered Datalists get copied into this one here
-    private ObservableCollection<DataItem> _currentData { get; set; }
-    public ObservableCollection<DataItem> CurrentData
-        {
-        get { return _currentData; }
-        set
-            {
+    public ObservableCollection<DataItem> CurrentData {
+        get => _currentData;
+        set {
             _currentData = value;
             OnPropertyChanged(nameof(CurrentData));
-            }
         }
-
-    private List<DataItem> _allUsers { get; set; }
-
-    public List<DataItem> AllUsers
-        {
-        get { return _allUsers; }
-        set
-            {
+    }
+    public List<DataItem> AllUsers {
+        get => _allUsers;
+        set {
             _allUsers = value;
             OnPropertyChanged(nameof(AllUsers));
-            }
-
         }
-
+    }
     //Selected user from AccountDropdownList
-    private DataItem _selectedUser { get; set; }
-
-    public DataItem SelectedUser
-        {
-        get { return _selectedUser; }
-        set
-            {
+    public Names SelectedUser {
+        get => _selectedUser;
+        set {
             _selectedUser = value;
             OnPropertyChanged(nameof(SelectedUser));
-            }
         }
-    //hk, i have deep right now, so sorry
+    }
+#endregion
 
-    #endregion
-
-    /// <summary>
-    /// Initialize the window, load all data from Database, display it in Datagrid(CurrentData)
-    /// </summary>
-    public HistoryViewModel()
-        {
+    public HistoryViewModel() {
+        //AddNewColumns();
         AllDataItems = new ObservableCollection<DataItem>();
         LoadData();
         CurrentData = AllDataItems;
-        }
+    }
 
+    //public static void AddNewColumns()
+    //    {
+    //        var connectionString = "Data Source=HistoryDataBase.sqlite;Version=3;";
+    //    using(var connection = new SQLiteConnection(connectionString)) {
+    //        connection.Open();
 
+    //        // Adding the PayOut column
+    //        using(var command
+    //              = new SQLiteCommand("ALTER TABLE HistoryDataTable ADD COLUMN PayOut DOUBLE", connection)) {
+    //            command.ExecuteNonQuery();
+    //        }
 
-    private void LoadData()
-        {
-        string connectionString = "Data Source=HistoryDataBase.sqlite;Version=3;";
-        using(SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
+    //        // Adding the Deposit column
+    //        using(var command
+    //              = new SQLiteCommand("ALTER TABLE HistoryDataTable ADD COLUMN Deposit DOUBLE", connection)) {
+    //            command.ExecuteNonQuery();
+    //        }
+
+    //        connection.Close();
+    //    }
+    //}
+
+    private void LoadData() {
+        var connectionString = "Data Source=HistoryDataBase.sqlite;Version=3;";
+        using(var connection = new SQLiteConnection(connectionString)) {
             connection.Open();
-
-            string query = "SELECT Date, Name, Salary, AmountEarned, LotteryEarned FROM HistoryDataTable";
-            using(SQLiteCommand command = new SQLiteCommand(query,connection))
-                {
-                using(SQLiteDataReader reader = command.ExecuteReader())
-                    {
-                    while(reader.Read())
-                        {
-                        var dataItem = new DataItem
-                            {
-                            Date = reader.GetDateTime(0),
-                            Name = reader.GetString(1),
-                            Salary = reader.GetDouble(2),
-                            AmountEarned = reader.GetDouble(3),
-                            LotteryEarned = reader.GetDouble(4)
-                            };
+            var query = "SELECT Date, Name, Salary, AmountEarned, LotteryEarned FROM HistoryDataTable";
+            using(var command = new SQLiteCommand(query, connection)) {
+                using(var reader = command.ExecuteReader()) {
+                    while(reader.Read()) {
+                        var dataItem = new DataItem {
+                            Date = reader.GetDateTime(0), Name = reader.GetString(1), Salary = reader.GetDouble(2)
+                            , AmountEarned = reader.GetDouble(3), LotteryEarned = reader.GetDouble(4)
+                            //, PayOut = reader.GetDouble(5), Deposit = reader.GetDouble(6)
+                        };
                         AllDataItems.Add(dataItem);
-                        }
                     }
                 }
-
-            connection.Close();
             }
+            connection.Close();
         }
+    }
+
     /// <summary>
-    /// Simply selects one user and displays all information
+    ///     Simply selects one user and displays all information
     /// </summary>
-    /// <param name="name"></param>
-    public void FilterUserOverView(string name)
-        {
-        List<DataItem> oneUser = AllDataItems.Where(x => x.Name == name).ToList();
+    public void FilterOneUserOverView(string name) {
+        var oneUser = AllDataItems.Where(x => x.Name == name).ToList();
         CurrentData = new ObservableCollection<DataItem>(oneUser);
-        }
+    }
 
     /// <summary>
-    /// Filter by won lotteries
+    ///     Filter by won lotteries
     /// </summary>
-    /// <param name="name"></param>
-    public void FilterUserLottery(string name)
-        {
-        List<DataItem> lotteryUser = AllDataItems.Where(x => x.Name == name && x.LotteryEarned != 0).ToList();
+    public void FilterUserLottery(string name) {
+        var lotteryUser = AllDataItems.Where(x => x.Name == name && x.LotteryEarned != 0).ToList();
         CurrentData = new ObservableCollection<DataItem>(lotteryUser);
-        }
+    }
 
     /// <summary>
-    /// filter by payouts
+    ///     filter by payouts
     /// </summary>
-    /// <param name="name"></param>
-    public virtual void FilterUserPayOuts(string name)
-        {
-        List<DataItem> payOutUser = AllDataItems.Where(x => x.Name == name && x.PayOut != 0).ToList();
+    public void FilterUserPayOuts(string name) {
+        var payOutUser = AllDataItems.Where(x => x.Name == name && x.PayOut != 0).ToList();
         CurrentData = new ObservableCollection<DataItem>(payOutUser);
-        }
+    }
 
     /// <summary>
-    /// filter the current money master
+    ///     filter the current money master
     /// </summary>
-    /// <param name="name"></param>
-    public void FilterUserRich()
-        {
-        List<DataItem> richUser =
-        AllDataItems.GroupBy(x => x.Name).Select(x => new DataItem
-            {
-            Name = x.Key,
-            AmountEarned = x.Sum(y => y.AmountEarned)
+    public void FilterUserRich() {
+        var richUser =
+            AllDataItems.GroupBy(x => x.Name).Select(x => new DataItem {
+                Name = x.Key, AmountEarned = x.Sum(y => y.AmountEarned)
             }).OrderByDescending(x => x.AmountEarned).ToList();
         CurrentData = new ObservableCollection<DataItem>(richUser);
-        }
-
-    public void FilterUserDeposits(string name)
-        {
-        List<DataItem> userDeposits = AllDataItems.Where(x => x.Name == name && x.Deposit > 0).ToList();
-        CurrentData = new ObservableCollection<DataItem>(userDeposits);
-        }
-
-    private void OnPropertyChanged(string propertyName)
-        {
-        PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(propertyName));
-        }
-
     }
+
+    public void FilterUserDeposits(string name) {
+        var userDeposits = AllDataItems.Where(x => x.Name == name && x.Deposit > 0).ToList();
+        CurrentData = new ObservableCollection<DataItem>(userDeposits);
+    }
+
+    public void ResetAllData() {
+        LoadData();
+        CurrentData = AllDataItems;
+    }
+
+    public void ExportToCSV() {
+        string filePath = @$"./HistoryData{DateTime.Now.ToShortDateString()}.csv";
+        var    csv      = new StringBuilder();
+        csv.AppendLine("Date,Name,Salary,AmountEarned,LotteryEarned,PayOut,Deposit"); // Header
+
+        foreach(var item in AllDataItems) {
+            csv.AppendLine($"{item.Date},{item.Name},{item.Salary},{item.AmountEarned},{item.LotteryEarned},{item.PayOut},{item.Deposit}");
+        }
+
+        File.WriteAllText(filePath, csv.ToString());
+        MessageBox.Show("File saved in Programfolder.");
+    }
+
+private void OnPropertyChanged(string propertyName) {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}

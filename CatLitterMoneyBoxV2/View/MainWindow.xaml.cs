@@ -133,13 +133,6 @@ public partial class MainWindow:Window
         }
 
     /// <summary>
-    /// Testbutton
-    /// </summary>
-    private void Test_btn_OnClick(object sender,RoutedEventArgs e)
-        {
-        mainView.Testing();
-        }
-    /// <summary>
     /// Clear all values
     /// </summary>
     private void Reset_btn_OnClick(object sender,RoutedEventArgs e)

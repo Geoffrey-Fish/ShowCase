@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|d:\\github\\showcase\\catlittermoneyboxv2\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|d:\\github\\showcase\\catlittermoneyboxv2\\view\\historyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\historyview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|d:\\github\\showcase\\catlittermoneyboxv2\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\viewmodel\\historyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:viewmodel\\historyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\view\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\view\\historyview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\historyview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\model\\dataitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:model\\dataitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 597,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,28 +78,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "View\\MainWindow.xaml",
               "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml",
               "RelativeToolTip": "View\\MainWindow.xaml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwCUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-11T16:32:29.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T12:26:15.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAUwIsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T13:44:26.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
               "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "ViewModel\\MainViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIIAAAATAAAA",
+              "ViewState": "AQIAAJYBAAAAAAAAAAAqwLEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T16:27:05.745Z",
+              "WhenOpened": "2024-03-11T16:27:05.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoryView.xaml",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml",
+              "RelativeDocumentMoniker": "View\\HistoryView.xaml",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml",
+              "RelativeToolTip": "View\\HistoryView.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwCQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-04T12:26:58.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoryView.xaml.cs",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\HistoryView.xaml.cs",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml.cs",
+              "RelativeToolTip": "View\\HistoryView.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T13:44:25.28Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HistoryViewModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\HistoryViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\HistoryViewModel.cs",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\HistoryViewModel.cs",
+              "RelativeToolTip": "ViewModel\\HistoryViewModel.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T12:27:43.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataItem.cs",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Model\\DataItem.cs",
+              "RelativeDocumentMoniker": "Model\\DataItem.cs",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Model\\DataItem.cs",
+              "RelativeToolTip": "Model\\DataItem.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T12:25:42.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "History.cs",
+              "DocumentMoniker": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Database\\History.cs",
+              "RelativeDocumentMoniker": "Database\\History.cs",
+              "ToolTip": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Database\\History.cs",
+              "RelativeToolTip": "Database\\History.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T12:28:09.267Z"
             }
           ]
         },

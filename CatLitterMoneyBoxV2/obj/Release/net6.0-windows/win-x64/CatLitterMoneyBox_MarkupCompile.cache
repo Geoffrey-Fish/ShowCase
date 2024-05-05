@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\GitHub\#iDidIt\CatLitterMoneyBox\obj\Release\net6.0-windows\win-x64\
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Release\net6.0-windows\win-x64\
 CatLitterMoneyBox
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-D:\GitHub\#iDidIt\CatLitterMoneyBox\App.xaml
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\App.xaml
 2-1882298259
 
 111316480053
-205-464657274
+205-496841418
 View\HistoryView.xaml;View\MainWindow.xaml;
 
 False

@@ -7,15 +7,15 @@
         xmlns:commands="clr-namespace:CatLitterMoneyBox.Commands"
         xmlns:controls="clr-namespace:CatLitterMoneyBox.Controls"
         mc:Ignorable="d"
-        Background="Lavender"
+        Background="Azure"
         Title="HistoryView"  Height="450" Width="600">
 
     <Window.Resources>
         <commands:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
         <!--Color converter, because it wont do otherwise -->
         <Style TargetType="Button">
-            <Setter Property="Background" Value="LightGray"/>
-            <Setter Property="Foreground" Value="DarkBlue"/>
+            <Setter Property="Background" Value="AntiqueWhite"/>
+            <Setter Property="Foreground" Value="Teal"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Padding" Value="10,5"/>
@@ -38,42 +38,19 @@
             CornerRadius="10" Margin="5">
      <!-- Main Grid -->
         <Grid Name="MainGrid" Margin="10">
-            <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="2*"/>
-        </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- DataGrid Upper Left -->
+        <!-- DataGrid Upside -->
         <DataGrid Grid.Row="0" Grid.Column="0" x:Name="dataGrid"
                   ItemsSource="{Binding CurrentData}"
                   AutoGenerateColumns="True" Height="250"/>
 
-        <!-- Infopanel Upper Right-->
-        <Grid Name="InfopanelGrid" Grid.Row="0" Grid.Column="1" Margin="5" Background="LightGray">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Platz für random Text"/>
-                <TextBlock Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="2" TextWrapping="WrapWithOverflow" Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "></TextBlock>
-        </Grid>
-
        <!--Controls Grid Lower half -->
-        <Grid Name="Controls" Grid.Row="1" Grid.ColumnSpan="2" Margin="5">
+        <Grid Name="Controls" Grid.Row="1" Margin="5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -86,18 +63,18 @@
           
             <Label Grid.Row="0" Grid.Column="0" Content="Nutzerauswahl" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Center" />
 
-            <ComboBox Grid.Row="1" Grid.Column="0" Name="AccountList_drpdwn" Height="20" Width="100"
-                    ItemsSource="{Binding AllDataItems}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedUser}"/>
+            <ComboBox Grid.Row="0" Grid.Column="1" Name="AccountList_drpdwn" Height="20" Width="100"
+                    ItemsSource="{Binding Names}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedUser}"/>
           
-            <Button Grid.Row="0" Grid.Column="1" Name="Verdienst_btn" Width="90" Height="20"
+            <Button Grid.Row="1" Grid.Column="0" Name="Verdienst_btn" Width="90" Height="20"
                     Content="Verdienst"
                     controls:ColorChangingOnClick.IsColorChangingOnClickEnabled="True"
                     controls:ColorChangingOnClick.TemporaryColor="darkgray"
                     controls:ColorChangingOnClick.OriginalColor="lightgray"
                     Click="Verdienst_btn_OnClick"/>
 
-            <Button Grid.Row="0" Grid.Column="2" Name="Lottery_btn" Width="90" Height="20"
-                    Content="Lottery"
+            <Button Grid.Row="2" Grid.Column="0" Name="Lottery_btn" Width="120" Height="20"
+                    Content="Lotteriegewinner"
                     controls:ColorChangingOnClick.IsColorChangingOnClickEnabled="True"
                     controls:ColorChangingOnClick.TemporaryColor="darkgray"
                     controls:ColorChangingOnClick.OriginalColor="lightgray"
@@ -110,12 +87,26 @@
                     controls:ColorChangingOnClick.OriginalColor="lightgray"
                     Click="Payout_btn_OnClick"/>
             
-            <Button Grid.Row="1" Grid.Column="2" Name="Richest_btn" Width="90" Height="20"
-                    Content="König"
+            <Button Grid.Row="2" Grid.Column="1" Name="Richest_btn" Width="90" Height="20"
+                    Content="Hamster"
                     controls:ColorChangingOnClick.IsColorChangingOnClickEnabled="True"
                     controls:ColorChangingOnClick.TemporaryColor="darkgray"
                     controls:ColorChangingOnClick.OriginalColor="lightgray"
                     Click="Richest_btn_OnClick"/>
+			<Button Grid.Row="3" Grid.Column="0" Name="Reset_btn" Width="90" Height="20"
+			        Content="Reset"
+			        controls:ColorChangingOnClick.IsColorChangingOnClickEnabled="True"
+			        controls:ColorChangingOnClick.TemporaryColor="darkgray"
+			        controls:ColorChangingOnClick.OriginalColor="lightgray"
+			        Click="Reset_btn_Click"
+			        />
+            <Button Grid.Row="3" Grid.Column="1" Name="Export_btn" Width="90" Height="20"
+                    Content="Export"
+                    controls:ColorChangingOnClick.IsColorChangingOnClickEnabled="True"
+                    controls:ColorChangingOnClick.TemporaryColor="darkgray"
+                    controls:ColorChangingOnClick.OriginalColor="lightgray"
+                    Click="Export_btn_Click"
+                    />
             </Grid>
         </Grid>
         </Border>

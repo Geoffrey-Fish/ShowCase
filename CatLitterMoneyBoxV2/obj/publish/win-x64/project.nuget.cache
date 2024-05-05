@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "0qTbUqYgXrqL95ROknghbqcK59km04AeT1riWocX1xla+Dzw4N/z8HEGZV39zPJ2K1g2gZ5+WswT56qUL7iyyA==",
+  "dgSpecHash": "9fWdn1i+Vyjf7iOpXpmDmoRkqMIET42hs26+F9ZNJAGP/Qr9OLZ47YeSu5Mxc+2VvGKRi6vvgBDKThynFHOKWQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\#iDidIt\\CatLitterMoneyBox\\CatLitterMoneyBox.csproj",
+  "projectFilePath": "D:\\GitHub\\ShowCase\\CatLitterMoneyBoxV2\\CatLitterMoneyBox.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Scy\\.nuget\\packages\\microsoft.visualstudio.vsixcolorcompiler\\17.0.31709.430\\microsoft.visualstudio.vsixcolorcompiler.17.0.31709.430.nupkg.sha512",
     "C:\\Users\\Scy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Scy\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\Scy\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
     "C:\\Users\\Scy\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
-    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.21\\microsoft.netcore.app.runtime.win-x64.6.0.21.nupkg.sha512",
-    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.21\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.21.nupkg.sha512",
-    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.21\\microsoft.aspnetcore.app.runtime.win-x64.6.0.21.nupkg.sha512",
-    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.21\\microsoft.netcore.app.crossgen2.win-x64.6.0.21.nupkg.sha512"
+    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.29\\microsoft.netcore.app.runtime.win-x64.6.0.29.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.29\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.29.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.29\\microsoft.aspnetcore.app.runtime.win-x64.6.0.29.nupkg.sha512",
+    "C:\\Users\\Scy\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.29\\microsoft.netcore.app.crossgen2.win-x64.6.0.29.nupkg.sha512"
   ],
   "logs": []
 }
