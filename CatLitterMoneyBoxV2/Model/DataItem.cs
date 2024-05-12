@@ -8,14 +8,14 @@ public class DataItem : INotifyPropertyChanged {
 
     public DataItem(
         DateTime date, string name, double salary, double amountEarned, double lotteryEarned, double deposit
-        , double payOut) {
+        , double withdraw) {
         Date          = date;
         Name          = name;
         Salary        = salary;
         AmountEarned  = amountEarned;
         LotteryEarned = lotteryEarned;
         Deposit       = deposit;
-        PayOut        = payOut;
+        Withdraw      = withdraw;
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -25,8 +25,13 @@ public class DataItem : INotifyPropertyChanged {
     }
 
 #region Properties
-    private DateTime _date { get; set; }
-
+    private DateTime _date          { get; set; }
+    private string   _name          { get; set; }
+    private double   _salary        { get; set; }
+    private double   _amountEarned  { get; set; }
+    private double   _lotteryEarned { get; set; }
+    private double   _deposit       { get; set; }
+    private double   _withdraw      { get; set; }
     public DateTime Date {
         get => _date;
         set {
@@ -34,9 +39,6 @@ public class DataItem : INotifyPropertyChanged {
             OnPropertyChanged(nameof(Date));
         }
     }
-
-    private string _name { get; set; }
-
     public string Name {
         get => _name;
         set {
@@ -44,9 +46,6 @@ public class DataItem : INotifyPropertyChanged {
             OnPropertyChanged(nameof(Name));
         }
     }
-
-    private double _salary { get; set; }
-
     public double Salary {
         get => _salary;
         set {
@@ -54,9 +53,6 @@ public class DataItem : INotifyPropertyChanged {
             OnPropertyChanged(nameof(Salary));
         }
     }
-
-    private double _amountEarned { get; set; }
-
     public double AmountEarned {
         get => _amountEarned;
         set {
@@ -64,9 +60,6 @@ public class DataItem : INotifyPropertyChanged {
             OnPropertyChanged(nameof(AmountEarned));
         }
     }
-
-    private double _lotteryEarned { get; set; }
-
     public double LotteryEarned {
         get => _lotteryEarned;
         set {
@@ -74,24 +67,18 @@ public class DataItem : INotifyPropertyChanged {
             OnPropertyChanged(nameof(LotteryEarned));
         }
     }
-
-    private double _payOut { get; set; }
-
-    public double PayOut {
-        get => _payOut;
-        set {
-            _payOut = value;
-            OnPropertyChanged(nameof(PayOut));
-        }
-    }
-
-    private double _deposit { get; set; }
-
     public double Deposit {
         get => _deposit;
         set {
             _deposit = value;
             OnPropertyChanged(nameof(Deposit));
+        }
+    }
+    public double Withdraw {
+        get => _withdraw;
+        set {
+            _withdraw = value;
+            OnPropertyChanged(nameof(Withdraw));
         }
     }
 #endregion

@@ -59,49 +59,40 @@ public class HistoryViewModel : INotifyPropertyChanged {
             OnPropertyChanged(nameof(SelectedUser));
         }
     }
+    public static string date     = DateTime.Now.ToShortDateString();
+    public static string safeDate = date.Replace('/', '-');
 #endregion
 
-    public HistoryViewModel() {
-        //AddNewColumns();
+public HistoryViewModel() {
         AllDataItems = new ObservableCollection<DataItem>();
         LoadData();
         CurrentData = AllDataItems;
     }
 
-    //public static void AddNewColumns()
-    //    {
-    //        var connectionString = "Data Source=HistoryDataBase.sqlite;Version=3;";
-    //    using(var connection = new SQLiteConnection(connectionString)) {
-    //        connection.Open();
-
-    //        // Adding the PayOut column
-    //        using(var command
-    //              = new SQLiteCommand("ALTER TABLE HistoryDataTable ADD COLUMN PayOut DOUBLE", connection)) {
-    //            command.ExecuteNonQuery();
-    //        }
-
-    //        // Adding the Deposit column
-    //        using(var command
-    //              = new SQLiteCommand("ALTER TABLE HistoryDataTable ADD COLUMN Deposit DOUBLE", connection)) {
-    //            command.ExecuteNonQuery();
-    //        }
-
-    //        connection.Close();
-    //    }
-    //}
-
     private void LoadData() {
         var connectionString = "Data Source=HistoryDataBase.sqlite;Version=3;";
         using(var connection = new SQLiteConnection(connectionString)) {
             connection.Open();
-            var query = "SELECT Date, Name, Salary, AmountEarned, LotteryEarned FROM HistoryDataTable";
+            var query = @"SELECT 
+                        Date
+                        ,Name
+                        ,Salary
+                        ,AmountEarned
+                        ,LotteryEarned
+                        ,Deposit
+                        ,Withdraw
+                        FROM HistoryDataTable";
             using(var command = new SQLiteCommand(query, connection)) {
                 using(var reader = command.ExecuteReader()) {
                     while(reader.Read()) {
                         var dataItem = new DataItem {
-                            Date = reader.GetDateTime(0), Name = reader.GetString(1), Salary = reader.GetDouble(2)
-                            , AmountEarned = reader.GetDouble(3), LotteryEarned = reader.GetDouble(4)
-                            //, PayOut = reader.GetDouble(5), Deposit = reader.GetDouble(6)
+                            Date = reader.GetDateTime(0)
+                            ,Name = reader.GetString(1)
+                            ,Salary = reader.GetDouble(2)
+                            ,AmountEarned = reader.GetDouble(3)
+                            ,LotteryEarned = reader.GetDouble(4)
+                            ,Deposit = reader.GetDouble(5)
+                            ,Withdraw = reader.GetDouble(6)
                         };
                         AllDataItems.Add(dataItem);
                     }
@@ -131,7 +122,7 @@ public class HistoryViewModel : INotifyPropertyChanged {
     ///     filter by payouts
     /// </summary>
     public void FilterUserPayOuts(string name) {
-        var payOutUser = AllDataItems.Where(x => x.Name == name && x.PayOut != 0).ToList();
+        var payOutUser = AllDataItems.Where(x => x.Name == name && x.Withdraw != 0).ToList();
         CurrentData = new ObservableCollection<DataItem>(payOutUser);
     }
 
@@ -146,23 +137,33 @@ public class HistoryViewModel : INotifyPropertyChanged {
         CurrentData = new ObservableCollection<DataItem>(richUser);
     }
 
+    /// <summary>
+    ///     filter by deposits
+    /// </summary>
+    /// <param name="name"></param>
     public void FilterUserDeposits(string name) {
         var userDeposits = AllDataItems.Where(x => x.Name == name && x.Deposit > 0).ToList();
         CurrentData = new ObservableCollection<DataItem>(userDeposits);
     }
 
+    /// <summary>
+    ///     Reset all data to default
+    /// </summary>
     public void ResetAllData() {
         LoadData();
         CurrentData = AllDataItems;
     }
 
+    /// <summary>
+    ///     Export to CSV file
+    /// </summary>
     public void ExportToCSV() {
-        string filePath = @$"./HistoryData{DateTime.Now.ToShortDateString()}.csv";
+        string filePath = @$"./HistoryData{safeDate}.csv";
         var    csv      = new StringBuilder();
-        csv.AppendLine("Date,Name,Salary,AmountEarned,LotteryEarned,PayOut,Deposit"); // Header
+        csv.AppendLine("Date,Name,Salary,AmountEarned,LotteryEarned,Deposit,Withdraw"); // Header
 
         foreach(var item in AllDataItems) {
-            csv.AppendLine($"{item.Date},{item.Name},{item.Salary},{item.AmountEarned},{item.LotteryEarned},{item.PayOut},{item.Deposit}");
+            csv.AppendLine($"{item.Date};{item.Name}{item.Salary};{item.AmountEarned};{item.LotteryEarned};{item.Deposit};{item.Withdraw}");
         }
 
         File.WriteAllText(filePath, csv.ToString());

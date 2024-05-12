@@ -79,6 +79,13 @@ D:\GitHub\#iDidIt\CatLitterMoneyBox\obj\Debug\net6.0-windows\refint\CatLitterMon
 D:\GitHub\#iDidIt\CatLitterMoneyBox\obj\Debug\net6.0-windows\CatLitterMoneyBox.pdb
 D:\GitHub\#iDidIt\CatLitterMoneyBox\obj\Debug\net6.0-windows\CatLitterMoneyBox.genruntimeconfig.cache
 D:\GitHub\#iDidIt\CatLitterMoneyBox\obj\Debug\net6.0-windows\ref\CatLitterMoneyBox.dll
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox.csproj.AssemblyReference.cache
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\HistoryView.g.cs
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\MainWindow.g.cs
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\App.g.cs
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox_MarkupCompile.cache
+D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox_MarkupCompile.lref
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\CatLitterMoneyBox.exe
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\CatLitterMoneyBox.deps.json
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\CatLitterMoneyBox.runtimeconfig.json
@@ -94,13 +101,6 @@ D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\runtimes\linux-x
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox.csproj.AssemblyReference.cache
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\HistoryView.g.cs
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\MainWindow.g.cs
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\App.g.cs
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox_MarkupCompile.cache
-D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox_MarkupCompile.lref
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\HistoryView.baml
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\View\MainWindow.baml
 D:\GitHub\ShowCase\CatLitterMoneyBoxV2\obj\Debug\net6.0-windows\CatLitterMoneyBox.g.resources

@@ -8,14 +8,14 @@
         xmlns:controls="clr-namespace:CatLitterMoneyBox.Controls"
         mc:Ignorable="d"
 		Background="#EAECCC"
-        Title="Katzenklo V2" AutomationProperties.HelpText="Katzenklo" Height="Auto" Width="Auto">
+        Title="Katzenklo V2" AutomationProperties.HelpText="Katzenklo" Height="730" Width="400">
 
 	<Window.Resources>
 		<commands:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
 		<!--Color converter, because it wont do otherwise -->
 		<Style TargetType="Button">
-			<Setter Property="Background" Value="#C3E2C2"/>
-			<Setter Property="Foreground" Value="#CD8D7A"/>
+			<Setter Property="Background" Value="#728B38"/>
+			<Setter Property="Foreground" Value="#50388B"/>
 			<Setter Property="FontSize" Value="10"/>
 			<Setter Property="FontWeight" Value="Bold"/>
 			<Setter Property="Padding" Value="10,5"/>

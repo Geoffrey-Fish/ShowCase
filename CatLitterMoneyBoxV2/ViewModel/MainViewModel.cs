@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Windows;
 
 using CatLitterMoneyBox.Database;
 using CatLitterMoneyBox.Model;
@@ -11,13 +10,14 @@ using CatLitterMoneyBox.Model;
 using Newtonsoft.Json;
 
 using Color = System.Drawing.Color;
+using MessageBox = System.Windows.MessageBox;
 
 namespace CatLitterMoneyBox.ViewModel;
 
 public class MainViewModel : INotifyPropertyChanged {
     public MainViewModel() {
         InitializeBankAccounts();
-        //statics inits
+        //static value properties inits
         CheckOne      = false;
         CheckTwo      = false;
         CheckLottery  = false;
@@ -25,7 +25,7 @@ public class MainViewModel : INotifyPropertyChanged {
         UserDeletion  = false;
         SonderZahlung = false;
         LohnAnpassung = false;
-        //labelstuff inits
+        //labelstuff value properties inits
         UserCreationNametbxTxt  = "";
         UserCreationNametbxCol  = Color.DarkGray;
         UserCreationNamelblTxt  = "";
@@ -57,7 +57,6 @@ public class MainViewModel : INotifyPropertyChanged {
     private readonly string            path = ".\\BankAccounts.json"; //Path to database
     private          List<BankAccount> _bankAccounts    { get; set; }
     private          BankAccount       _selectedAccount { get; set; }
-
     public List<BankAccount> BankAccounts {
         get => _bankAccounts;
         set {
@@ -65,7 +64,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public BankAccount SelectedAccount {
         get => _selectedAccount;
         set {
@@ -76,21 +74,20 @@ public class MainViewModel : INotifyPropertyChanged {
 #endregion statics
 
 #region labelstuff
-    private string?  _userCreationNamelblTxt { get; set; }
-    private string   _userCreationNametbxTxt { get; set; }
-    private Color    _userCreationNametbxCol { get; set; }
-    private string?  _userVorganglblTxt      { get; set; }
-    private bool     _valueChangetbxFoc      { get; set; }
-    private string?  _valueChangetbxTxt      { get; set; }
-    private DateTime _calendarcal;
-    private Color    _valueChangetbxCol { get; set; }
-    private Color    _abhebeboxtbxCol   { get; set; }
-    private bool     _abhebeboxtbxFoc;
+    private string?  _userCreationNamelblTxt  { get; set; }
+    private string   _userCreationNametbxTxt  { get; set; }
+    private Color    _userCreationNametbxCol  { get; set; }
+    private string?  _userVorganglblTxt       { get; set; }
+    private bool     _valueChangetbxFoc       { get; set; }
+    private string?  _valueChangetbxTxt       { get; set; }
+    private DateTime _calendarcal             { get; set; }
+    private Color    _valueChangetbxCol       { get; set; }
+    private Color    _abhebeboxtbxCol         { get; set; }
+    private bool     _abhebeboxtbxFoc         { get; set; }
     private bool     _guthabenAusbuchenbtnEna { get; set; }
-    private string?  _abhebeboxtbxTxt;
-    private bool     _valueChangebtnEna      { get; set; }
-    private bool     _userManipulationbtnEna { get; set; }
-
+    private string?  _abhebeboxtbxTxt         { get; set; }
+    private bool     _valueChangebtnEna       { get; set; }
+    private bool     _userManipulationbtnEna  { get; set; }
     public string UserCreationNametbxTxt {
         get => _userCreationNametbxTxt;
         set {
@@ -98,7 +95,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged(nameof(_userCreationNametbxTxt));
         }
     }
-
     public Color UserCreationNametbxCol {
         get => _userCreationNametbxCol;
         set {
@@ -106,7 +102,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public string? UserCreationNamelblTxt {
         get => _userCreationNamelblTxt;
         set {
@@ -114,7 +109,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public string? UserVorganglblTxt {
         get => _userVorganglblTxt;
         set {
@@ -122,7 +116,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public bool ValueChangetbxFoc {
         get => _valueChangetbxFoc;
         set {
@@ -130,7 +123,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public string? ValueChangetbxTxt {
         get => _valueChangetbxTxt;
         set {
@@ -138,7 +130,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public Color ValueChangetbxCol {
         get => _valueChangetbxCol;
         set {
@@ -146,7 +137,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public DateTime Calendarcal {
         get => _calendarcal;
         set {
@@ -154,7 +144,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public bool AbhebeboxtbxFoc {
         get => _abhebeboxtbxFoc;
         set {
@@ -162,7 +151,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public string? AbhebeboxtbxTxt {
         get => _abhebeboxtbxTxt;
         set {
@@ -170,7 +158,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public Color AbhebeboxtbxCol {
         get => _abhebeboxtbxCol;
         set {
@@ -178,7 +165,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public bool GuthabenAusbuchenbtnEna {
         get => _guthabenAusbuchenbtnEna;
         set {
@@ -186,7 +172,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public bool ValueChangebtnEna {
         get => _valueChangebtnEna;
         set {
@@ -194,7 +179,6 @@ public class MainViewModel : INotifyPropertyChanged {
             OnPropertyChanged();
         }
     }
-
     public bool UserManipulationbtnEna {
         get => _userManipulationbtnEna;
         set {
@@ -271,6 +255,7 @@ public class MainViewModel : INotifyPropertyChanged {
         UserManipulationbtnEna = false;
         UserCreation           = false;
         UserDeletion           = false;
+        //todo: clear shit up in history table then!
     }
 #endregion BankAccounts
 
@@ -279,26 +264,32 @@ public class MainViewModel : INotifyPropertyChanged {
     ///     Preparation for to change the amount of salary
     /// </summary>
     public void LohnAnpassen() {
-        ValueChangetbxFoc = true;
-        ValueChangetbxCol = Color.LightCyan;
-        ValueChangetbxTxt = SelectedAccount.Salary.ToString(); //Current Salary display
-        ValueChangebtnEna = true;
-        //Flags for submit button
-        LohnAnpassung = true;
-        SonderZahlung = false;
+        if(SelectedAccount != null) {
+            ValueChangetbxFoc = true;
+            ValueChangetbxCol = Color.LightCyan;
+            ValueChangetbxTxt = SelectedAccount.Salary.ToString(); //Current Salary display
+            ValueChangebtnEna = true;
+            //Flags for submit button
+            LohnAnpassung = true;
+            SonderZahlung = false;
+        } else {
+            MessageBox.Show("Please choose a Name from the dropdown first.");  
+        }
     }
 
     /// <summary>
     ///     Preparation for adding extra money to the selected account
     /// </summary>
     public void SonderEinzahlung() {
-        ValueChangetbxFoc = true;
-        ValueChangetbxCol = Color.LightCyan;
-        ValueChangetbxTxt = "0,00";
-        ValueChangebtnEna = true;
-        //Flags for submit button
-        SonderZahlung = true;
-        LohnAnpassung = false;
+        if(SelectedAccount != null) {
+            ValueChangetbxFoc = true;
+            ValueChangetbxCol = Color.LightCyan;
+            ValueChangetbxTxt = "0,00";
+            ValueChangebtnEna = true;
+            //Flags for submit button
+            SonderZahlung = true;
+            LohnAnpassung = false;
+        } else { MessageBox.Show("Please choose a Name from the dropdown first."); }
     }
 
     /// <summary>
@@ -431,7 +422,6 @@ public class MainViewModel : INotifyPropertyChanged {
 #endregion Abbuchungsvorgang
 
 #region Testing / Clean off / Save before close
-
     /// <summary>
     ///     A little bit clean up
     /// </summary>
@@ -461,8 +451,6 @@ public class MainViewModel : INotifyPropertyChanged {
     ///     gets called upon closing the app
     /// </summary>
     private void MainWindow_Closing(object sender, CancelEventArgs e) {
-        // Perform your save operation here
-        // SaveDataToCSV();
         SafeBankAccounts();
     }
 #endregion

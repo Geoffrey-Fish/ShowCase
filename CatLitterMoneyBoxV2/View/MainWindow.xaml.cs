@@ -50,13 +50,9 @@ public partial class MainWindow:Window
     #endregion
 
     #region Bankaccounts
-
-
     private void UserAnlegen_btn_Click(object sender,RoutedEventArgs e) //New User creation
         {
-
         mainView.UserAnlegen();
-
         }
 
     private void UserLöschen_btn_Click(object sender,RoutedEventArgs e) //Userdeletion
