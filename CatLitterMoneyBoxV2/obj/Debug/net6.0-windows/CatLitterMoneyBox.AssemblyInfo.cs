@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatLitterMoneyBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9d55cbb6ea9ce707a77cda96e4e4d0b4a65d6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d72a935a4b411a2e8159e47f7bd8fff74544cde9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatLitterMoneyBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatLitterMoneyBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

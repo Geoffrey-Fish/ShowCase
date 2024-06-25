@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|c:\\users\\g.fisch\\20-29 code\\23 github\\23.11 personal github\\showcase\\catlittermoneyboxv2\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|c:\\users\\g.fisch\\20-29 code\\23 github\\23.11 personal github\\showcase\\catlittermoneyboxv2\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|c:\\users\\g.fisch\\20-29 code\\23 github\\23.11 personal github\\showcase\\catlittermoneyboxv2\\viewmodel\\historyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:viewmodel\\historyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|c:\\users\\g.fisch\\20-29 code\\23 github\\23.11 personal github\\showcase\\catlittermoneyboxv2\\view\\historyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:view\\historyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|c:\\users\\g.fisch\\20-29 code\\23 github\\23.11 personal github\\showcase\\catlittermoneyboxv2\\database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699DD772-466D-4009-9E6B-99AF3961C3A5}|CatLitterMoneyBox.csproj|solutionrelative:database\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 597,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:42:34.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistoryView.xaml",
+              "DocumentMoniker": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml",
+              "RelativeDocumentMoniker": "View\\HistoryView.xaml",
+              "ToolTip": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\View\\HistoryView.xaml",
+              "RelativeToolTip": "View\\HistoryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T08:39:30.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "History.cs",
+              "DocumentMoniker": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Database\\History.cs",
+              "RelativeDocumentMoniker": "Database\\History.cs",
+              "ToolTip": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\Database\\History.cs",
+              "RelativeToolTip": "Database\\History.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:38:53.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModel\\MainViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:36:22.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HistoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\HistoryViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\HistoryViewModel.cs",
+              "ToolTip": "C:\\Users\\g.fisch\\20-29 Code\\23 GitHub\\23.11 Personal GitHub\\ShowCase\\CatLitterMoneyBoxV2\\ViewModel\\HistoryViewModel.cs",
+              "RelativeToolTip": "ViewModel\\HistoryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:36:17.343Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
